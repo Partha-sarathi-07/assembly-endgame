@@ -44,3 +44,71 @@ main {
     font-weight: 500;
     letter-spacing: 0.25px;
 }
+
+#current-word {
+    margin-top: 40px;
+    display: flex;
+    gap: 2px;
+}
+#current-word > span {
+    color: white;
+    background-color: rgb(60, 60, 60);
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.15rem;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid white;
+}
+
+#keyboard {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 450px;
+    text-align: center;
+    gap: 5px;
+}
+
+#keyboard > button {
+    text-transform: capitalize;
+    font-size: 0.85;
+    font-weight: 500;
+    background-color: orange;
+    border-style: none;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: border 0.5s ease-out;
+}
+
+#keyboard > button:hover {
+    border: 3px solid white;
+}
+
+#keyboard > button:active {
+    background-color: rgb(255, 187, 60);
+}
+
+#keyboard > button.correct-letter {
+    background-color: green;
+}
+
+#keyboard > button.wrong-letter {
+    background-color: red;
+}
+
+main > button {
+    background-color: rgb(35, 177, 228);
+    border: 1px solid white;
+    margin-top: 50px;
+    padding: 10px 60px;
+    font-size: 1.25rem;
+    border-radius: 5px;
+}
